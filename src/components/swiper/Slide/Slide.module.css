@@ -1,0 +1,9 @@
+.container {
+    margin-right: 1em;
+}
+  
+.content {
+    box-sizing: border-box;
+    padding: 50% 0;
+    background-size: cover;
+}
