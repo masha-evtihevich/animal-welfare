@@ -1,0 +1,88 @@
+.content__img {
+  min-height: 500px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 45%;
+}
+.content__img-dog {
+  background-image: url(https://imgs.6sqft.com/wp-content/uploads/2019/10/28100117/555TenDogLaunch_LeonardoMascaro-086.jpg);
+}
+.content__img-cat {
+  background-image: url(https://avatars.mds.yandex.net/get-zen_doc/1131857/pub_5ed9229d0150672d6eb47503_5ed9244077265a0d621f8027/scale_1200);
+}
+.content__title {
+  font-family: "Libre Baskerville", serif;
+  font-weight: bold;
+  font-size: 42px;
+  text-align: center;
+}
+.content__text {
+  position: relative;
+  width: 701px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 75px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+.content__text::before {
+  content: "";
+  position: absolute;
+  top: 7.5rem;
+  right: calc(100% - 35rem);
+  width: 450px;
+  height: 3px;
+  background-color: #000000;
+}
+.content__main {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  justify-content: space-between;
+
+  margin-bottom: 55px;
+}
+.content-catalog {
+  display: grid;
+  grid-template-areas:
+    "image image image"
+    "name gender gender"
+    "age age age";
+  grid-template-columns: 206px;
+  grid-template-rows: 286px 50px 29px;
+}
+.content-catalog__image {
+  grid-area: image;
+  width: 320px;
+  height: 320px;
+}
+.content-catalog__title {
+  grid-area: name;
+  margin-top: 40px;
+
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+.content-catalog__text-age {
+  grid-area: age;
+  margin-top: 20px;
+
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #1c1c1c;
+}
+.content-catalog__text-gender {
+  grid-area: gender;
+  margin-top: 47px;
+
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: lowercase;
+}
