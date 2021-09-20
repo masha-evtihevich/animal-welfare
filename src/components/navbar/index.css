@@ -3,7 +3,8 @@
 }
 .navbar__menu {
     display: grid;
-    grid-template-columns: repeat(6, 17%);
+    grid-template-columns: repeat(6, auto);
+    justify-content: space-between;
 
     max-width: 90rem;
     padding: 0;
@@ -19,8 +20,8 @@
     font-size: 30px;
 }
 .navbar__text-letters {
-    background: black;
-    color: white;
+    background: #000000;
+    color: #ffffff;
     text-transform: lowercase;
 }
 .navbar__text-letters:before {
@@ -38,9 +39,9 @@
     font-weight: 700;
     font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
 .navbar__link:hover {
-    color: white;
-    background: black;
+    color: #ffffff;
+    background: #000000;
 }
