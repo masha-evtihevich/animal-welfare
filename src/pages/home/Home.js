@@ -4,7 +4,7 @@ import "./index.css";
 
 export const Home = () => {
   return (
-    <>
+    <div className="home-content">
       <div className="home-background">
         <div className="home-background__square">
           <h4 className="home-background__title">Arthur Schopenhauer</h4>
@@ -22,9 +22,9 @@ export const Home = () => {
         <h3 className="slider__title">Our guests</h3>
         <StickySlider />
       </div>
-      <footer className='footer'>
-        <p className='footer__text'>2021, Animal Welfare</p>
+      <footer className="footer">
+        <p className="footer__text">2021, Animal Welfare</p>
       </footer>
-    </>
+    </div>
   );
 };
