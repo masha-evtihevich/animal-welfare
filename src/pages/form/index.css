@@ -1,0 +1,66 @@
+.form-content {
+    background: url(https://money-insider.ru/wp-content/uploads/2019/08/neordinarnye-biznes-idei-dlya-nachinayushchih-predprinimatelej_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.form {
+    display: grid;
+    grid-gap: 10px;
+    margin: 0 0 4rem 50rem;
+    max-width: 400px;
+    padding: 20px;
+
+    background: white;
+}
+.form__title {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-size: 33px;
+    text-align: center;
+}
+.form__label, .form__select {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #1c1c1c;
+}
+input, .form__textarea  {
+    width: -webkit-fill-available;
+    line-height: 35px;
+    border: none;
+    outline: none;
+    background: transparent url(https://html5book.ru/wp-content/uploads/2016/12/bg-form.png) bottom left repeat-x;
+    background-size: 8px 35px;
+}
+.form__textarea {
+    background-attachment: local;
+    background-repeat: repeat;
+    resize: none;
+ }
+ .form__label-textarea {
+     margin-top: 35px;
+ }
+ input[type="submit"] {
+    padding: 10px 20px;
+    margin-top: 10px;
+
+    background: #000000;
+    border-width: 0;
+
+    cursor: pointer;
+    outline: none;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fffdee;
+    text-transform: uppercase;
+    
+    transition: 1s cubic-bezier(.165, .84, .44, 1);
+ }
+ input[type=submit]:hover {
+    background: #c8c7d5;
+    color: #000000 ;
+}
+
+
+  
