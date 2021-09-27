@@ -18,9 +18,6 @@ export const Navbar = () => (
                 <NavLink className='navbar__link' to='/catalogCat'>Choose the cat</NavLink>
             </li>
             <li className='navbar__item'>
-                <NavLink className='navbar__link' to='/contacts'>Contact us</NavLink>
-            </li>
-            <li className='navbar__item'>
                 <NavLink className='navbar__link' to='/help'>Help to the center</NavLink>
             </li>
         </ul>
