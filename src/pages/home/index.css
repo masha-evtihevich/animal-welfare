@@ -63,16 +63,3 @@
   height: 5px;
   background-color: #000000;
 }
-.footer {
-  width: 1440px;
-}
-.footer__text {
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  color: #4e4d4d;
-}
-.footer__text::before {
-  content: "\00A9";
-}

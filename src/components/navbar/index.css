@@ -3,7 +3,7 @@
 }
 .navbar__menu {
     display: grid;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(5, auto);
     justify-content: space-between;
 
     max-width: 90rem;
@@ -40,6 +40,8 @@
     font-size: 20px;
     text-decoration: none;
     color: #000000;
+    
+    transition: 1s cubic-bezier(.165, .84, .44, 1);
 }
 .navbar__link:hover {
     color: #ffffff;
