@@ -1,9 +1,10 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Home } from "./pages/home/Home";
-import { CatalogDog } from "./pages/catalog/dog/CatalogDog";
-import { CatalogCat } from "./pages/catalog/cat/CatalogCat";
+import CatalogDog from "./pages/catalog/dog/CatalogDog";
+import CatalogCat  from "./pages/catalog/cat/CatalogCat";
 import { Navbar } from "./components/navbar/Navbar";
+import { Form } from "./pages/form/Form"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path={"/"} exact component={Home} />
         <Route path={"/catalogDog"} component={CatalogDog} />
         <Route path={"/catalogCat"} component={CatalogCat} />
+        <Route path={"/help"} component={Form} />
       </Switch>
     </BrowserRouter>
   );
