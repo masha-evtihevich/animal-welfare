@@ -24,7 +24,7 @@
     font-size: 15px;
     color: #1c1c1c;
 }
-input, .form__textarea  {
+input, .form__button, .form__textarea  {
     width: -webkit-fill-available;
     line-height: 35px;
     border: none;
@@ -40,7 +40,7 @@ input, .form__textarea  {
  .form__label-textarea {
      margin-top: 35px;
  }
- input[type="submit"] {
+ .form__button {
     padding: 10px 20px;
     margin-top: 10px;
 
@@ -57,7 +57,7 @@ input, .form__textarea  {
     
     transition: 1s cubic-bezier(.165, .84, .44, 1);
  }
- input[type=submit]:hover {
+ .form__button:hover {
     background: #c8c7d5;
     color: #000000 ;
 }

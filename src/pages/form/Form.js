@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import { ACTION_TYPES } from "../../const";
 import { Footer } from "../../components/footer/Footer";
 import "./index.css";
+import Modal from "../../components/modal/Modal";
+import ModalForm from "../../components/modal/modalForm/ModalForm";
+
 
 export const Form = () => {
   const dispatch = useDispatch();
@@ -68,6 +71,7 @@ export const Form = () => {
     };
     dispatch(changeTextArea);
   };
+  const [modalActive, setModalActive] = useState()
   const onLogin = () => {
     try {
       axios.post("http://localhost:3001/posts", {
@@ -78,11 +82,12 @@ export const Form = () => {
         select,
         textArea,
       });
-      alert("Send");
+      setModalActive(true);
     } catch (err) {
       console.log("error", err);
     }
   };
+  
   return (
     <>
       <div className="form-content">
@@ -164,14 +169,16 @@ export const Form = () => {
               placeholder="Write details"
               rows="5"
               type="text"
-              name="message"
             />
           </label>
 
-          <input type="submit" value="Submit" onClick={onLogin} />
+          <button className="form__button" type="button" value="Submit" onClick={onLogin}>Submit</button>
         </form>
       </div>
       <Footer />
+      <Modal active={modalActive} setActive={setModalActive}> 
+        <ModalForm/>
+      </Modal>
     </>
   );
 };

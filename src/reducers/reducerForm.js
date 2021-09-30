@@ -1,6 +1,6 @@
 import { ACTION_TYPES } from "../const";
 
-const initialState = {
+export const initialState = {
   firstName: "",
   lastName: "",
   phone: "",

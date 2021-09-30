@@ -1,0 +1,65 @@
+.modalCatalog {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 39% 59%;
+    padding: 20px;
+}
+.modalCatalog__img {
+    width: 266px;
+    height: 266px;
+}
+.modalCatalog__text {
+    display: grid;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+.modalCatalog__text-name {
+    margin-top: 0;
+
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+.modalCatalog__colortext{
+    margin-top: 0;
+    
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+.modalCatalog__text-age, .modalCatalog__text-gender, .modalCatalog__text-about, .modalCatalog__text-character, .modalCatalog__text-wool {
+    margin-top: 0;
+    
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #1c1c1c;
+}
+.modalCatalog__btn {
+    width: 245px;
+    height: 27px;
+    padding: 15px 10px 0 20px;
+    margin-top: 10px;
+
+    background: #000000;
+    
+    border-width: 0;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    font-size: 11px;
+    color: #fffdee;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    transition: 1s cubic-bezier(.165, .84, .44, 1);
+ }
+ .modalCatalog__btn:hover {
+    background: #c8c7d5;
+    color: #000000 ;
+}
+
+
+
+  
